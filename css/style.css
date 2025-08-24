@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     min-width: 1500px;
@@ -106,7 +106,6 @@ nav {
     gap: 4rem;
     font-size: 17px;
     font-weight: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li {
@@ -127,7 +126,6 @@ li:hover {
     color: #212832;
     cursor: pointer;
     white-space: nowrap;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
 }
 
@@ -139,7 +137,6 @@ select {
     cursor: pointer;
     font-size: 17px;
     font-weight: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hero {
@@ -174,7 +171,6 @@ select {
     line-height: 27px;
     font-size: 17px;
     font-weight: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 1rem;
 }
 
@@ -243,7 +239,6 @@ select {
     color: #ffffff;
     font-size: 17px;
     font-weight: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .play {
@@ -259,7 +254,6 @@ select {
     color: #686D77;
     font-size: 17px;
     font-weight: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .music {
@@ -295,9 +289,9 @@ select {
     border: 3px solid rgb(255, 255, 255);
     border-radius: 20%;
     cursor: pointer;
-    gap: 15px;
+    gap: 5px;
     padding: 30px;
-    width: 240px;
+    width: 20%;
     background-color: #ffffff;
 }
 
@@ -341,7 +335,6 @@ select {
     text-align: center;
     line-height: 1.3;
     font-weight: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Блок Destinations */
@@ -352,7 +345,7 @@ select {
 }
 
 .destination {
-    width: 28%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -395,4 +388,152 @@ select {
     height: 16.25px;
     width: 16.25px;
     margin-right: 2%;
+}
+
+/* Блок Book a trip */
+.blok_a_trip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blok_a_trip>div {
+    width: 50%;
+}
+
+.title_block_four {
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    min-width: 511px;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    max-width: 327px;
+    margin-top: 3%;
+}
+
+.step>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.step>div>span {
+    padding-left: 5%;
+    padding-bottom: 3%;
+    color: #5E6282;
+}
+
+.title_step {
+    font-weight: bold;
+}
+
+.container_trip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trip_card {
+    position: relative;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 25px;
+    color: #84829A;
+    box-shadow:
+        30px -23px 100px 0px rgba(7, 134, 232, 0.16),
+        0px 100px 83px 22px rgba(0, 0, 0, 0.06);
+}
+
+.title_trip {
+    color: #080809;
+    font-size: 18px;
+    padding: 15px 0;
+    letter-spacing: 1.5%;
+}
+
+.description_trip {
+    letter-spacing: -0.5%;
+}
+
+.icon {
+    max-width: 36px;
+    margin-right: 10px;
+}
+
+.building {
+    max-width: 16px;
+}
+
+.heart {
+    max-width: 20px;
+}
+
+.footer_trip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.icons,
+.subtitle_greece,
+.meeting_card {
+    padding-top: 7%;
+}
+
+.ongoing_card {
+    position: absolute;
+    bottom: 70px;
+    right: -150px;
+    padding: 16px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 100px 83px 22px rgba(0, 0, 0, 0.06);
+}
+
+.trip_to_rome {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.ongoing_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle_ongoing {
+    color: #84829A;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.title_ongoing {
+    color: #080809;
+    padding-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: -1.5%;
+}
+
+.comleted {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.number {
+    color: #8A79DF;
+}
+
+.ongoing_range {
+    accent-color: #8A79DF;
+    width: 156px;
+    pointer-events: none;
 }
