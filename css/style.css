@@ -138,6 +138,7 @@ select {
 }
 
 .row {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -531,9 +532,9 @@ select {
 
 /* Блок Testimonials */
 .testimonials {
+    position: relative;
     display: grid;
-    grid-template-columns: 30% 70%;
-    position: absolute;
+    grid-template-columns: 45% 55%;
     width: 100%;
     gap: 5%;
 }
@@ -541,6 +542,7 @@ select {
 .title_testimotionals {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .circles {
@@ -564,20 +566,22 @@ select {
 }
 
 .card_testimonials {
-    position: absolute;
-    left: 37%;
+    position: relative;
+    margin-right: 5%;
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .testimonial {
+    position: relative;
     display: flex;
+    width: 70%;
     flex-direction: column;
     border-radius: 25px;
-    padding: 34px 60px 34px 34px;
+    padding: 20px 30px;
     box-shadow: 0px 100px 83px 22px rgba(0, 0, 0, 0.06);
-    width: 100%;
     background-color: white;
 }
 
@@ -585,16 +589,15 @@ select {
     position: absolute;
     z-index: -1;
     border: 2px solid #F7F7F7;
-    width: 100%;
-    top: 77px;
-    right: -42px;
+    top: 35%;
+    left: 10%;
     box-shadow: none;
 }
 
 .avatar {
     position: absolute;
     max-width: 68px;
-    right: 92%;
+    left: -10%;
     top: -12%;
 }
 
@@ -617,12 +620,13 @@ select {
 }
 
 .arrows {
-    margin-top: 20px;
+    position: absolute;
+    top: 30%;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 58px;
-    margin-left: 50%;
 }
 
 .arrow {
@@ -645,4 +649,26 @@ select {
     .testimonials {
         width: 1256px;
     }
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.brand:hover {
+    box-shadow: 0px 16px 28px -6px rgba(34, 60, 80, 0.2);
+    filter: grayscale(0);
 }
