@@ -8,6 +8,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    white-space: nowrap;
     min-width: 1500px;
 }
 
@@ -27,15 +28,16 @@ section {
 
 h1 {
     color: #DF6951;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 h2 {
     position: relative;
     font-weight: bolder;
-    font-size: 86px;
+    font-size: 84px;
     color: #181E4B;
-    letter-spacing: -1px;
+    letter-spacing: -4%;
+    line-height: 89%;
 }
 
 h3 {
@@ -44,16 +46,15 @@ h3 {
     font-size: 50px;
     color: #14183E;
     font-weight: bolder;
-    letter-spacing: 3px;
 }
 
 h4 {
     width: 100%;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: bolder;
     color: #5E6282;
+    margin-bottom: 2%;
 }
 
 /* Блок Hero */
@@ -69,11 +70,13 @@ h4 {
 
 .decore {
     position: absolute;
-    right: 0;
+    right: -20%;
+    top: -124px;
     background-repeat: no-repeat;
     background-position: right top;
-    width: 40vw;
+    width: 100%;
     object-fit: fill;
+    z-index: -1;
 }
 
 header {
@@ -113,10 +116,6 @@ li {
     cursor: pointer;
 }
 
-li:hover {
-    color: #2800db;
-}
-
 .sign_up {
     padding: 9px 21px 9px 22px;
     border: 1px solid black;
@@ -125,7 +124,6 @@ li:hover {
     font-weight: medium;
     color: #212832;
     cursor: pointer;
-    white-space: nowrap;
     font-size: 17px;
 }
 
@@ -139,16 +137,15 @@ select {
     font-weight: medium;
 }
 
-.hero {
+.row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    z-index: 10;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .content {
-    max-width: 550px;
-    margin-top: 6rem;
+    width: 70%;
 }
 
 .offer {
@@ -157,7 +154,7 @@ select {
 
 .line {
     position: absolute;
-    height: 80px;
+    height: 100%;
     width: 363px;
     top: 71px;
     left: 195px;
@@ -190,7 +187,7 @@ select {
 .woman {
     position: relative;
     float: right;
-    height: 80vh;
+    height: 100%;
 }
 
 .plane_one {
@@ -340,15 +337,17 @@ select {
 /* Блок Destinations */
 .destinations {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 5%;
     margin-top: 100px;
 }
 
 .destination {
-    width: 25%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     cursor: pointer;
     background-color: #ffffff;
     border-bottom-right-radius: 25px;
@@ -376,7 +375,7 @@ select {
 }
 
 .general_description {
-    padding: 5% 5% 10% 5%;
+    padding: 10%;
 }
 
 .general_description_country {
@@ -391,21 +390,12 @@ select {
 }
 
 /* Блок Book a trip */
-.blok_a_trip {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-.blok_a_trip>div {
-    width: 50%;
-}
-
-.title_block_four {
+.title h3,
+.title h4 {
     display: flex;
-    justify-content: flex-start;
-    text-align: start;
-    min-width: 511px;
+    flex-direction: column;
+    text-align: left;
 }
 
 .step {
@@ -434,15 +424,16 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .trip_card {
     position: relative;
-    width: 55%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    padding: 25px;
+    padding: 25PX;
     color: #84829A;
     box-shadow:
         30px -23px 100px 0px rgba(7, 134, 232, 0.16),
@@ -538,6 +529,123 @@ select {
     pointer-events: none;
 }
 
+/* Блок Testimonials */
+.testimonials {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: absolute;
+    width: 100%;
+    gap: 5%;
+}
+
+.title_testimotionals {
+    display: flex;
+    flex-direction: column;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.circle:first-child {
+    background: #39425D;
+    margin-left: 0;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #E5E5E5;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.card_testimonials {
+    position: absolute;
+    left: 37%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 34px 60px 34px 34px;
+    box-shadow: 0px 100px 83px 22px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    background-color: white;
+}
+
+.testimonial:nth-child(2) {
+    position: absolute;
+    z-index: -1;
+    border: 2px solid #F7F7F7;
+    width: 100%;
+    top: 77px;
+    right: -42px;
+    box-shadow: none;
+}
+
+.avatar {
+    position: absolute;
+    max-width: 68px;
+    right: 92%;
+    top: -12%;
+}
+
+.text_testimonial {
+    color: #5E6282;
+    line-height: 32px;
+}
+
+.name_of_person {
+    color: #5E6282;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+.person_location {
+    color: #5E6282;
+    font-size: 14px;
+}
+
+.arrows {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 58px;
+    margin-left: 50%;
+}
+
+.arrow {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #BCB7C2;
+    border-bottom: white;
+    border-right: white;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.arrow:last-child {
+    border: 2px solid #3E2E4D;
+    border-top: white;
+    border-left: white;
+}
+
+@media (max-width: 1256px) {
+    .testimonials {
+        width: 1256px;
+    }
+}
 .brands {
     display: flex;
     justify-content: space-between;
