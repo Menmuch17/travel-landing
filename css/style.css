@@ -672,3 +672,107 @@ select {
     box-shadow: 0px 16px 28px -6px rgba(34, 60, 80, 0.2);
     filter: grayscale(0);
 }
+
+/* Блок Subscribe */
+.subscribe {
+    position: relative;
+}
+
+.subscribe_icon_telegram {
+    position: absolute;
+    top: -4%;
+    right: -2%;
+    z-index: 3;
+}
+
+.subscribe_decoration {
+    position: absolute;
+    z-index: 1;
+    bottom: -13%;
+    right: -7%;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 10% 100%);
+}
+
+.subscribe_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 150px 30px 30px 30px;
+    background-color: rgb(223, 215, 249, 0.2);
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.wave {
+    position: absolute;
+    opacity: 20%;
+    top: 44%;
+    left: 2%;
+    z-index: -1;
+}
+
+.wave:nth-child(2) {
+    top: -4%;
+    left: 85%;
+}
+
+.subscribe_text {
+    font-weight: bold;
+    color: #5E6282;
+    font-size: 33px;
+    width: 70%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.subscribe_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 5%;
+}
+
+.input_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.subscribe_icon_email {
+    width: 20px;
+    height: 20px;
+}
+
+.email-input {
+    border: none;
+    font-size: 14px;
+    color: #39425D;
+    padding-left: 1rem;
+    width: 100%;
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+.subscribe_button {
+    border: none;
+    border-radius: 10px;
+    width: 35%;
+    font-size: 17px;
+    background: linear-gradient(#FF946D, #FF7D68);
+    color: white;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+}
