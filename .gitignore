@@ -1,2 +1,30 @@
 .git/
+# IDE settings
 .idea/
+.vscode/
+
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# System files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Temp files
+*.tmp
+*.swp
